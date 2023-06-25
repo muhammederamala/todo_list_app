@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<!-- <div class="welcome_container">
+    <div class="welcome_containeritem">
+      <h2>Stay organized,</h2> 
+      <h2>accomplish more</h2> 
+      <h2> with our intuitive</h2>
+      <h2> ToDo app! </h2> 
+  	  </div>
+      <div class="text"></div>
+  	  <div class="welcome_text">
+        <a href="{% url 'login_view' %}">
+  	  	<button type="button" name="button" value="Get started" class="welcome_button">
+          <h4>Get Started</h4>
+        </button>
+      </a>
+  	  </div>
+    <div class="welcome_containeritem">
+    	{% load static %}
+      <img src="{% static 'api\icons\loginform_icon.png' %}" alt="Image description" width="400" height="250">
+    </div>
+</div>
+ -->
+
+<div class="welcome_container">
+    <div class="welcome_containeritem">
+      <h2>Stay organized,</h2> 
+      <h2>accomplish more</h2> 
+      <h2> with our intuitive</h2>
+      <h2> ToDo app! </h2> 
+      <div class="text">
+      <p>Your personal task companion – </p>
+      <p>conquer your to-do list with ease and stay on</p> 
+      <p> top of your goals!</p> 
+      </div>
+      <div class="welcome_text">
+        <a href="{% url 'login_view' %}">
+        <button type="button" name="button" value="Get started" class="welcome_button">
+          <h4>Get Started</h4>
+        </button>
+      </a>
+      </div>
+    </div>
+    <div class="welcome_containeritem">
+      {% load static %}
+      <img src="{% static 'api\icons\welcome_icon.png' %}" alt="Image description" width="500" height="350">
+    </div>
+</div>
+
+{% endblock content %}

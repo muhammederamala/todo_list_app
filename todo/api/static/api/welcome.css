@@ -1,0 +1,121 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("{% static 'adminpanel/media/background.jpg' %}");
+}
+
+.welcome_navbar {
+  background-color: #dae0f7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  border-bottom: solid 2px blue;
+}
+
+.welcome_navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.welcome_nav-item {
+  text-align: center;
+}
+
+.welcome_nav-link {
+  display: block;
+  color: white;
+  background-color: navy;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-weight: bolder;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+
+.welcome_container {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 20px;
+  padding-top: 0px;
+}
+    
+.welcome_containeritem {
+  flex: 1;
+  margin-top: 40px;
+  margin-left: 40px;
+  padding: 0;
+}
+
+.welcome_containeritem h2{
+  font-size: 40px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0;
+}
+
+.welcome_containeritem p{
+  margin: 0;
+  padding: 5px;
+}
+
+.welcome_text{
+  margin-top: 20px;
+}
+
+.welcome_button{
+  background-color: #9e050a;
+  color: white;
+  border-radius: 18px;
+  padding: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  width: 170px;
+  font-size: 15px;
+  transition: transform 0.3s;
+}
+
+.welcome_button:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.welcome_button h4{
+  margin: auto;
+}
+
+
+.welcome_footer{
+  display: flex;
+}
+
+.welcome_footeritem{
+  flex: 1;
+  margin-top: 40px;
+  margin-left: 40px;
+  padding: 0;
+}
+
+.active_page{
+  color: white;
+  background-color: navy;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome_username {
+  margin-right: 560px;
+  margin-left: 10px; 
+  display: block;
+  color: maroon;
+  text-decoration: none;
+  padding: 10px 30px;
+}

@@ -1,0 +1,251 @@
+td{
+	color: black;
+}
+
+.classesbox{
+    margin: auto;
+    margin-top: 60px;
+    width: 35%;
+    border: 2px solid black;
+    background-color: white;
+    background-size: cover;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.containerclass {
+  margin: auto;
+  width: 900px;
+  height: 220px;
+  padding: 3px;
+  background-color: white;
+  background-size: cover;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  color: #410254;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  border: 2px solid maroon;
+}
+
+.button3{
+margin: auto;
+padding: 3px;
+border: 1px solid black;
+color: white;
+background-color: black;
+background-size: cover;
+padding-left: 8px;
+padding-bottom: 8px;
+height: 40px;
+padding-top: 8px;
+margin-top: 35px;
+margin-left: 10px;
+width: 180px;
+transition: transform 0.3s;
+}
+
+.button3:hover{
+cursor: pointer;
+transform: scale(1.05);
+cursor: pointer;
+
+}
+
+.button3 h4{
+  margin: auto;
+  padding: 5px;
+}
+
+.button3, .completed{
+  background-color: green;
+  color: white;
+  transition: none;
+}
+
+.button3, .completed:hover{
+  cursor: pointer;
+  transform: none;
+}
+
+#displayclass{
+	margin-top: 25px;
+	font-size: 15px;
+}
+
+.button4{
+margin: auto;
+padding: 3px;
+border: 1px grey;
+color: black;
+background-color: lightgray;
+background-size: cover;
+padding-left: 8px;
+padding-bottom: 8px;
+height: 25px;
+padding-top: 6px;
+margin-top: 10px;
+margin-left: 0px;
+width: 80px;
+}
+
+.button4:hover{
+	cursor: pointer;
+	background-color: gray;
+
+}
+
+.button4 p{
+  padding: 0px;
+  margin: auto;
+}
+
+.noclasses {
+  margin: auto;
+  width: 450px;
+  height: 100px;
+  padding: 3px;
+  border: 1px solid black;
+  background-color: white;
+  background-size: cover;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  height: 135px;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+.noclasstext{
+  text-align: center;
+}
+
+.noclassbutton{
+margin: auto;
+padding: 3px;
+border: 1px solid black;
+color: white;
+background-color: black;
+background-size: cover;
+padding-left: 8px;
+padding-bottom: 8px;
+height: 40px;
+padding-top: 8px;
+width: 160px;
+
+margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.noclassbutton :hover{
+	cursor: pointer;
+}
+
+.noclassbutton h4{
+  margin: auto;
+  padding: 0px;
+}
+
+.icontext{
+  font-weight: bolder;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 5px;  
+/*  color: #820082;*/
+  color: black;
+}
+
+.icontext:hover{
+  color: black;
+}
+
+.column2{
+  float: left;
+  width: 200px;
+  padding: 5px;
+  margin-left: 100px;
+}
+
+.columnclasslist {
+  float: left;
+  width: 100px;
+  padding: 5px;
+  margin-left: 100px;
+}
+
+.rowclasslist::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.columnclasslist1 {
+  float: left;
+  padding: 5px;
+  margin-left: 25px;
+}
+
+.add_class_classlist{
+margin: auto;
+padding: 3px;
+border: 1px solid black;
+color: black;
+background-color: whitesmoke;
+background-size: cover;
+padding-left: 8px;
+padding-bottom: 8px;
+height: 40px;
+padding-top: 8px;
+width: 160px;
+margin-left: 900px;
+margin-bottom: 100px;
+transition: transform 0.3s;
+
+}
+
+.add_class_classlist:hover{
+cursor: pointer;
+transform: scale(1.05);
+}
+
+.add_class_classlist h4{
+ padding: 0px;
+ margin: auto;
+}
+
+.add_class_button_classlist img {
+margin: auto;
+width: 30px; 
+height: 30px;
+flex: 1;
+padding: 5px;
+}
+
+.add_class_button_classlist h3{
+flex: 1;
+margin: auto;
+padding: 5px;
+}
+
+.add_class_button_classlist{
+margin: auto;
+margin-top: 100px;
+margin-left: 153px;
+display: flex;
+background-color: white;
+border: 1px solid black;
+width: 100px;
+}
+
+.add_class_button_classlist:hover{
+  cursor: pointer;
+  background-color: whitesmoke;
+}

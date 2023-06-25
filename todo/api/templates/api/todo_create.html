@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+  <!-- <div class="button">
+    <h2> create a new class </h2>
+  </div> -->
+  <div class="container1">
+    <div class="row">
+      <h2> add new task </h2>
+      <form method="post" action="{% url 'create' %}">
+        {% csrf_token %}
+        <input type="text" class="classform" placeholder="Task" name="task" id="task">
+        <br>
+        <input type="text" class="classform"  placeholder="description" name="description" id="new_class">
+        <br>
+        <div class="time_container">
+        <label for="deadline">Deadline:</label><br>
+        <input type="datetime-local" id="deadline" name="deadline" class ="time" required>
+      </div>
+      <br>
+        <a href="">
+          <button class="button2" >
+            <h4> Create</h4>
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+</div>
+{% endblock content %}

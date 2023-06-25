@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'api/welcome.css' %}">
+  <link rel="stylesheet" href="{% static 'api/login.css' %}">
+  <link rel="stylesheet" href="{% static 'api/todo_create.css' %}">
+  <link rel="stylesheet" href="{% static 'api/todo.css' %}">
+
+
+  <style>
+    body {
+        background-image: url('{% static "personal/media/background1.jpg" %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+  </head>
+<body>
+
+
+  <nav class="welcome_navbar">
+    <ul class="welcome_navbar-nav">
+      {% if request.path != '/' %}
+      <li class="welcome_nav-item">
+      <span class="welcome_username" style="color: navy;">Welcome,<strong>{{ username }}</strong></span>
+      </li>
+      {% endif %}
+      <li class="welcome_nav-item">
+        <a class="welcome_nav-link {% if request.path == '/' %}active_page{% endif %}" >Home</a>
+      </li>
+      <li class="welcome_nav-item">
+        <a class="welcome_nav-link " href="{% url 'create' %}">+ todo list</a>
+      </li>
+      <li class="welcome_nav-item">
+        <a class="welcome_nav-link " href="{% url 'log_out' %}">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  {% block content %}
+
+  {% endblock content %}
+  
+
+
+  
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+{% if todo %}
+<h1 style="margin-left: 200px; margin-top:50px ;">My Tasks</h1>
+
+{% for tasks in todo %}
+
+<div class="containerclass">
+      <div class="row">
+
+        </div>
+          <div class="columnclasslist1" id="displayclass" >
+              <p class="icontext"> Title</p>
+              <br>
+              <p class="icontext"> Descriptiom</p>
+              <br>
+              <p class="icontext"> Deadline</p>
+              <br>
+              <form action="{% url 'delete' tasks.id %}" method="POST">
+                {% csrf_token %}
+              <button type= "submit" class="button4">
+                <p> Delete </p>
+              </button>
+          </form>
+          </div>
+
+          <div class="columnclasslist" id="displayclass" >
+              <p class="icontext"> : {{ tasks.task }}</p>
+              <br>
+              <p class="icontext"> : {{ tasks.description }}</p>
+              <br>
+              <p class="icontext"> : {{ tasks.deadline }}</p>
+              <br>
+          </div>
+
+
+          <div class="columnclasslist">
+              <div class="columnclasslist">
+                {% if tasks.completed %}
+                <button class="button3 completed" >
+                    <h4>Done</h4>
+                  </button>
+                {% else %}
+
+                <form method="post" action="{% url 'completed' task_id=tasks.id %}">
+                  {% csrf_token %}
+                <a>
+                  <button class="button3" >
+                    <h4>Mark as done</h4>
+                  </button>
+                </a>
+              </form>
+              {% endif %}
+              </div>
+              <br>
+          </div>
+</div>
+
+{% endfor %}
+<a href="{% url 'create' %}">
+    <button class="add_class_classlist" >
+      <h4> + Create new Task</h4>
+    </button>
+  </a>
+{% else %}
+
+<div class="noclasses">
+  <p class="noclasstext">
+    You have no Tasks !
+  </p>
+  <br>
+  <a href="{% url 'create' %}">
+    <button class="noclassbutton" >
+      <h4> Add new task</h4>
+    </button>
+  </a>
+</div>
+
+
+
+{% endif %}
+
+{% endblock content%}
